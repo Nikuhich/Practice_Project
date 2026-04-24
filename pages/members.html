@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Участники — Survival Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <polygon points="16,8 22,11.5 22,18.5 16,22 10,18.5 10,11.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="0.15"/>
+        <circle cx="16" cy="15" r="2.5" fill="currentColor"/>
+      </svg>
+      Survival Project
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html" class="nav-link">Главная</a></li>
+      <li><a href="about.html" class="nav-link">О проекте</a></li>
+      <li><a href="members.html" class="nav-link">Участники</a></li>
+      <li><a href="journal.html" class="nav-link">Журнал</a></li>
+      <li><a href="resources.html" class="nav-link">Ресурсы</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <div class="label">Команда</div>
+      <h1 class="heading-xl">Участники проекта</h1>
+    </div>
+
+    <div class="section" style="padding-top:0;">
+
+      <!-- GROUP LABEL -->
+      <div class="label" data-reveal>Состав группы — 3 участника</div>
+
+      <!-- MEMBER CARDS -->
+      <div class="members-grid" style="margin-bottom:3rem;">
+
+        <!-- OREKHOV -->
+        <div class="member-card" data-reveal>
+          <div class="member-avatar">НО</div>
+          <div class="member-name">Орехов Никита Викторович</div>
+          <div class="member-role">Frontend / DevOps</div>
+          <ul class="member-tasks">
+            <li>Разработка и вёрстка сайта проекта (HTML, CSS, JS)</li>
+            <li>Настройка и оформление Git-репозитория</li>
+            <li>Конфигурация структуры проекта и документации</li>
+            <li>Создание и ведение Markdown-документации</li>
+            <li>Деплой и поддержка статического сайта</li>
+          </ul>
+          <div class="contrib-bar-wrap">
+            <div class="contrib-label">
+              <span>Вклад в проект</span>
+              <span>40%</span>
+            </div>
+            <div class="contrib-bar-bg">
+              <div class="contrib-bar-fill" style="width:40%;background:linear-gradient(90deg,#00ff88,#00d4aa);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LUKYANETS -->
+        <div class="member-card" data-reveal data-reveal-delay="100">
+          <div class="member-avatar" style="color:var(--accent-teal);border-color:rgba(0,212,170,0.4);">ВЛ</div>
+          <div class="member-name">Лукьянец Владислав Максимович</div>
+          <div class="member-role">Документация / Отчётность</div>
+          <ul class="member-tasks">
+            <li>Составление отчёта по проектной практике (DOCX / PDF)</li>
+            <li>Поиск и систематизация информации о методах работы</li>
+            <li>Анализ проектов и технических решений</li>
+            <li>Взаимодействие с организацией-партнёром</li>
+            <li>Написание итоговых Markdown-отчётов</li>
+          </ul>
+          <div class="contrib-bar-wrap">
+            <div class="contrib-label">
+              <span>Вклад в проект</span>
+              <span>35%</span>
+            </div>
+            <div class="contrib-bar-bg">
+              <div class="contrib-bar-fill" style="width:35%;background:linear-gradient(90deg,#00d4aa,#0aabff);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KOFTUN -->
+        <div class="member-card" data-reveal data-reveal-delay="200">
+          <div class="member-avatar" style="color:var(--accent-blue);border-color:rgba(10,171,255,0.4);">ЛК</div>
+          <div class="member-name">Кофтун Лев Сергеевич</div>
+          <div class="member-role">Планирование / Технические решения</div>
+          <ul class="member-tasks">
+            <li>Поиск информации для планирования технических решений</li>
+            <li>Определение сроков и приоритетов задач</li>
+            <li>Анализ методологии реализации игровых механик</li>
+            <li>Техническая архитектура системы генерации мира</li>
+            <li>Исследование алгоритмов процедурной генерации</li>
+          </ul>
+          <div class="contrib-bar-wrap">
+            <div class="contrib-label">
+              <span>Вклад в проект</span>
+              <span>25%</span>
+            </div>
+            <div class="contrib-bar-bg">
+              <div class="contrib-bar-fill" style="width:25%;background:linear-gradient(90deg,#0aabff,#0055aa);"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PIE CHART -->
+      <div class="chart-container" data-reveal>
+        <div style="flex-shrink:0;">
+          <div class="label" style="margin-bottom:1rem;">Распределение вклада</div>
+          <svg id="pieChart" class="pie-chart-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item">
+            <span class="legend-dot" style="background:#00ff88;box-shadow:0 0 6px #00ff88;"></span>
+            <span class="legend-name">Орехов Никита — Frontend, DevOps</span>
+            <span class="legend-pct">40%</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="background:#00d4aa;box-shadow:0 0 6px #00d4aa;"></span>
+            <span class="legend-name">Лукьянец Владислав — Документация</span>
+            <span class="legend-pct">35%</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="background:#0aabff;box-shadow:0 0 6px #0aabff;"></span>
+            <span class="legend-name">Кофтун Лев — Планирование</span>
+            <span class="legend-pct">25%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- ACTIVITY CHART -->
+      <div data-reveal>
+        <div class="label">Распределение задач по направлениям</div>
+        <h2 class="heading-md" style="margin-bottom:1.5rem;">Зоны ответственности</h2>
+
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Веб-разработка и сайт</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-green);">Орехов Н.В.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:var(--accent-green);"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Git / Репозиторий</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-green);">Орехов Н.В.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:var(--accent-green);"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Отчёт по практике</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-teal);">Лукьянец В.М.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:var(--accent-teal);"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Исследование информации</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);">Лукьянец В.М. + Кофтун Л.С.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:linear-gradient(90deg,var(--accent-teal),var(--accent-blue));"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Планирование и сроки</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-blue);">Кофтун Л.С.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:var(--accent-blue);"></div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.1em;">Техническая архитектура</span>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-blue);">Кофтун Л.С.</span>
+            </div>
+            <div class="contrib-bar-bg" style="height:6px;">
+              <div class="contrib-bar-fill" style="width:100%;background:var(--accent-blue);"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 Survival Project</span>
+        <nav class="footer-nav">
+          <a href="../index.html">Главная</a>
+          <a href="about.html">О проекте</a>
+          <a href="journal.html">Журнал</a>
+          <a href="resources.html">Ресурсы</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

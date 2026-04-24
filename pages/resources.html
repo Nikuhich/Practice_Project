@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ресурсы — Survival Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <polygon points="16,8 22,11.5 22,18.5 16,22 10,18.5 10,11.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="0.15"/>
+        <circle cx="16" cy="15" r="2.5" fill="currentColor"/>
+      </svg>
+      Survival Project
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html" class="nav-link">Главная</a></li>
+      <li><a href="about.html" class="nav-link">О проекте</a></li>
+      <li><a href="members.html" class="nav-link">Участники</a></li>
+      <li><a href="journal.html" class="nav-link">Журнал</a></li>
+      <li><a href="resources.html" class="nav-link">Ресурсы</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <div class="label">Полезные материалы</div>
+      <h1 class="heading-xl">Ресурсы</h1>
+    </div>
+
+    <div class="section" style="padding-top:0;">
+
+      <!-- TERMINAL -->
+      <div class="terminal" style="margin-bottom:3rem;" data-reveal>
+        <div class="terminal-header">
+          <span class="term-dot term-dot-r"></span>
+          <span class="term-dot term-dot-y"></span>
+          <span class="term-dot term-dot-g"></span>
+          <span style="font-size:0.68rem;color:var(--text-dim);margin-left:0.5rem;">resources.index</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="term-typed">$ ls --type=links ./project-resources</div>
+          <div class="term-typed" style="color:var(--text-dim);">Scanning directories...</div>
+          <div class="term-typed" style="color:var(--accent-blue);">Found: github/ discord/ miro/ web-docs/ learning/</div>
+          <div class="term-typed">$ count --all</div>
+          <div class="term-typed" style="color:var(--accent-green);">&gt; Total resources: 12 links indexed</div>
+          <div class="term-typed" style="color:var(--text-dim);">Ready.</div>
+        </div>
+      </div>
+
+      <!-- SECTION: PROJECT LINKS -->
+      <div style="margin-bottom:3rem;">
+        <div class="label" data-reveal>Проект</div>
+        <h2 class="heading-md" style="margin-bottom:1.5rem;" data-reveal>Ссылки команды</h2>
+
+        <div class="resources-grid">
+
+          <a href="#" class="resource-card" data-reveal>
+            <div class="resource-card-type">Репозиторий</div>
+            <div class="resource-card-title">GitHub — Репозиторий проекта</div>
+            <div class="resource-card-desc">Основной репозиторий с кодом, документацией и историей коммитов. Все материалы проекта по дисциплине «Проектная деятельность».</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              github.com / survival-project
+            </div>
+          </a>
+
+          <a href="#" class="resource-card" data-reveal data-reveal-delay="80">
+            <div class="resource-card-type">Репозиторий</div>
+            <div class="resource-card-title">GitHub — Сайт проекта</div>
+            <div class="resource-card-desc">Отдельный репозиторий исходного кода этого сайта. HTML, CSS, JS — весь фронтенд доступен публично.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              github.com / survival-project-site
+            </div>
+          </a>
+
+          <a href="#" class="resource-card" data-reveal data-reveal-delay="160">
+            <div class="resource-card-type">Коммуникация</div>
+            <div class="resource-card-title">Discord — Сервер команды</div>
+            <div class="resource-card-desc">Основной канал коммуникации команды. Обсуждение задач, шеринг материалов, координация работы.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 16 16" fill="none">
+                <path d="M13.55 3.18A13.1 13.1 0 0010.42 2c-.15.27-.32.64-.44.93a12.1 12.1 0 00-3.96 0A10.2 10.2 0 005.58 2 13.18 13.18 0 002.45 3.18C.35 6.44-.22 9.62.07 12.76a13.27 13.27 0 004.05 2.06 9.86 9.86 0 00.86-1.42 8.5 8.5 0 01-1.35-.66l.33-.26a9.5 9.5 0 008.08 0l.33.26c-.43.26-.89.48-1.35.66.25.5.53.98.86 1.42a13.22 13.22 0 004.05-2.06c.33-3.53-.56-6.68-2.38-9.58zM5.35 10.9c-.85 0-1.55-.8-1.55-1.78s.68-1.78 1.55-1.78c.87 0 1.57.8 1.55 1.78 0 .98-.68 1.78-1.55 1.78zm5.3 0c-.85 0-1.55-.8-1.55-1.78s.68-1.78 1.55-1.78c.87 0 1.57.8 1.55 1.78 0 .98-.67 1.78-1.55 1.78z" fill="currentColor"/>
+              </svg>
+              discord.gg / survival-team
+            </div>
+          </a>
+
+          <a href="#" class="resource-card" data-reveal data-reveal-delay="0">
+            <div class="resource-card-type">Планирование</div>
+            <div class="resource-card-title">Miro — Доска проекта</div>
+            <div class="resource-card-desc">Визуальная доска для планирования: диаграммы архитектуры, дорожная карта, схемы игровых механик и экосистемы.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5 8h6M8 5v6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              miro.com / board / survival-project
+            </div>
+          </a>
+
+          <a href="#" class="resource-card" data-reveal data-reveal-delay="80">
+            <div class="resource-card-type">Организация-партнёр</div>
+            <div class="resource-card-title">Сайт партнёрской организации</div>
+            <div class="resource-card-desc">Ссылка на организацию-партнёра, в рамках взаимодействия с которой проводится проектная практика.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M8 1.5C8 1.5 5.5 4 5.5 8s2.5 6.5 2.5 6.5M8 1.5C8 1.5 10.5 4 10.5 8S8 14.5 8 14.5M1.5 8h13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              partner-org.ru
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- SECTION: LEARNING -->
+      <div>
+        <div class="label" data-reveal>Обучение</div>
+        <h2 class="heading-md" style="margin-bottom:1.5rem;" data-reveal>Учебные материалы</h2>
+
+        <div class="resources-grid">
+
+          <a href="https://git-scm.com/book/ru/v2" target="_blank" rel="noopener" class="resource-card" data-reveal>
+            <div class="resource-card-type">Документация</div>
+            <div class="resource-card-title">Официальная документация Git</div>
+            <div class="resource-card-desc">Полное руководство по системе контроля версий Git на русском языке. Основа работы с репозиториями.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              git-scm.com/book/ru/v2
+            </div>
+          </a>
+
+          <a href="https://ru.hexlet.io/courses/intro_to_git" target="_blank" rel="noopener" class="resource-card" data-reveal data-reveal-delay="80">
+            <div class="resource-card-type">Курс</div>
+            <div class="resource-card-title">Hexlet — Введение в Git</div>
+            <div class="resource-card-desc">Бесплатный интерактивный курс по Git от Hexlet. Практические задания, объяснение на схемах.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              hexlet.io / courses / intro_to_git
+            </div>
+          </a>
+
+          <a href="https://ru.hexlet.io/lesson_filters/markdown" target="_blank" rel="noopener" class="resource-card" data-reveal data-reveal-delay="160">
+            <div class="resource-card-type">Уроки</div>
+            <div class="resource-card-title">Hexlet — Уроки по Markdown</div>
+            <div class="resource-card-desc">Уроки по синтаксису Markdown — язык разметки для документации проекта. Все материалы практики оформлены в Markdown.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              hexlet.io / lesson_filters / markdown
+            </div>
+          </a>
+
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element" target="_blank" rel="noopener" class="resource-card" data-reveal>
+            <div class="resource-card-type">Справочник</div>
+            <div class="resource-card-title">MDN — Элементы HTML</div>
+            <div class="resource-card-desc">Полный справочник HTML-элементов от Mozilla. Использовался при разработке этого сайта.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              developer.mozilla.org / HTML / Element
+            </div>
+          </a>
+
+          <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/CSS_layout/Introduction" target="_blank" rel="noopener" class="resource-card" data-reveal data-reveal-delay="80">
+            <div class="resource-card-type">Справочник</div>
+            <div class="resource-card-title">MDN — Введение в CSS вёрстку</div>
+            <div class="resource-card-desc">Руководство по CSS-вёрстке: Flexbox, Grid, позиционирование. Основа стилизации сайта проекта.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              developer.mozilla.org / CSS / layout
+            </div>
+          </a>
+
+          <a href="https://doka.guide/" target="_blank" rel="noopener" class="resource-card" data-reveal data-reveal-delay="160">
+            <div class="resource-card-type">Справочник</div>
+            <div class="resource-card-title">Doka Guide — HTML / CSS / JS</div>
+            <div class="resource-card-desc">Русскоязычный справочник по веб-технологиям. Понятные объяснения, примеры, доступный язык.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              doka.guide
+            </div>
+          </a>
+
+          <a href="https://habr.com/ru/articles/548898/" target="_blank" rel="noopener" class="resource-card" data-reveal>
+            <div class="resource-card-type">Статья</div>
+            <div class="resource-card-title">Habr — DevTools для начинающих</div>
+            <div class="resource-card-desc">Статья об инструментах разработчика в браузере. Полезна для отладки HTML/CSS при разработке сайта.</div>
+            <div class="resource-card-link">
+              <svg viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              habr.com / DevTools
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 Survival Project</span>
+        <nav class="footer-nav">
+          <a href="../index.html">Главная</a>
+          <a href="about.html">О проекте</a>
+          <a href="members.html">Участники</a>
+          <a href="journal.html">Журнал</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
