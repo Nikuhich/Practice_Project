@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О проекте — Survival Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <polygon points="16,8 22,11.5 22,18.5 16,22 10,18.5 10,11.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="0.15"/>
+        <circle cx="16" cy="15" r="2.5" fill="currentColor"/>
+      </svg>
+      Survival Project
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html" class="nav-link">Главная</a></li>
+      <li><a href="about.html" class="nav-link">О проекте</a></li>
+      <li><a href="members.html" class="nav-link">Участники</a></li>
+      <li><a href="journal.html" class="nav-link">Журнал</a></li>
+      <li><a href="resources.html" class="nav-link">Ресурсы</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="label">Документация</div>
+      <h1 class="heading-xl">О проекте</h1>
+    </div>
+
+    <div class="section" style="padding-top:0;">
+
+      <!-- OVERVIEW GRID -->
+      <div class="about-grid">
+        <div>
+          <div class="label" data-reveal>Описание</div>
+          <p class="about-desc" data-reveal>
+            <strong style="color:var(--text-primary);">Survival Project</strong> — компьютерная игра в жанре
+            open-world survival с процедурной генерацией. Вдохновлена Minecraft и No Man's Sky:
+            каждый запуск создаёт уникальный мир с биомами, флорой, фауной и изменяющимися климатическими условиями.
+          </p>
+          <p class="about-desc" data-reveal>
+            Игрок не просто выживает — он адаптируется и эволюционирует. Система модификаций позволяет выбирать
+            путь развития, а динамическая экосистема реагирует на каждое решение. Реиграбельность
+            обеспечивается бесконечным разнообразием генерируемого контента.
+          </p>
+          <p class="about-desc" data-reveal>
+            Проект реализуется в рамках учебной дисциплины «Проектная деятельность» при
+            взаимодействии с организацией-партнёром.
+          </p>
+
+          <div style="margin-top:2rem;" data-reveal>
+            <div class="label">Статус проекта</div>
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+              <span class="status-dot"></span>
+              <span class="text-mono" style="font-size:0.82rem;color:var(--accent-green);">Активная разработка</span>
+            </div>
+
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="term-dot term-dot-r"></span>
+                <span class="term-dot term-dot-y"></span>
+                <span class="term-dot term-dot-g"></span>
+                <span style="font-size:0.68rem;color:var(--text-dim);margin-left:0.5rem;">project.status</span>
+              </div>
+              <div class="terminal-body">
+                <div class="term-line-dim"># Статус компонентов</div>
+                <div><span class="term-line-dim">$</span> check --module procgen</div>
+                <div style="color:var(--accent-green);">&gt; [OK] Алгоритм Perlin Noise — готов</div>
+                <div><span class="term-line-dim">$</span> check --module ecosystem</div>
+                <div style="color:var(--accent-blue);">&gt; [WIP] Симуляция экосистемы — в процессе</div>
+                <div><span class="term-line-dim">$</span> check --module ui</div>
+                <div style="color:var(--accent-blue);">&gt; [WIP] Пользовательский интерфейс — в процессе</div>
+                <div><span class="term-line-dim">$</span> check --module release</div>
+                <div style="color:var(--text-dim);">&gt; [PENDING] Финальная версия — запланирована</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="label" data-reveal>Сведения о проекте</div>
+          <div class="card" style="margin-bottom:1.5rem;" data-reveal>
+            <div class="corner-bracket corner-bracket--tl"></div>
+            <div class="corner-bracket corner-bracket--br"></div>
+            <table class="info-table">
+              <tr>
+                <td>Дисциплина</td>
+                <td>Проектная практика / Проектная деятельность</td>
+              </tr>
+              <tr>
+                <td>Жанр</td>
+                <td>Open-World Survival</td>
+              </tr>
+              <tr>
+                <td>Платформа</td>
+                <td>PC (Windows / Linux)</td>
+              </tr>
+              <tr>
+                <td>Трудоёмкость</td>
+                <td>72 академических часа</td>
+              </tr>
+              <tr>
+                <td>Команда</td>
+                <td>3 человека</td>
+              </tr>
+              <tr>
+                <td>Инструменты</td>
+                <td>Git, GitHub, Markdown, Hugo, HTML/CSS</td>
+              </tr>
+              <tr>
+                <td>Статус</td>
+                <td><span class="status-dot" style="width:6px;height:6px;"></span> В разработке</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="label" data-reveal>Ключевые ссылки</div>
+          <div style="display:flex;flex-direction:column;gap:0.6rem;" data-reveal>
+            <a href="#" class="link-pill" style="justify-content:flex-start;">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              Репозиторий проекта на GitHub
+            </a>
+            <a href="#" class="link-pill" style="justify-content:flex-start;">
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+                <path d="M2.4 6.4l5.6-4 5.6 4v7.2H9.6V9.6H6.4v4H2.4V6.4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+              Сайт репозитория (этот сайт)
+            </a>
+            <a href="#" class="link-pill" style="justify-content:flex-start;">
+              <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Организация-партнёр
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- PROBLEM & GOAL -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:3rem;" data-reveal>
+        <div class="card">
+          <div class="corner-bracket corner-bracket--tl"></div>
+          <div class="label" style="margin-bottom:1rem;">Проблема</div>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;">
+            Современные игры жанра выживания быстро теряют интерес из-за повторяемости контента и
+            отсутствия вариативности. Игроки не получают уникального опыта, требующего адаптации и
+            аналитического мышления. Статичный мир не стимулирует возвращение к игре.
+          </p>
+        </div>
+        <div class="card">
+          <div class="corner-bracket corner-bracket--tr"></div>
+          <div class="label" style="margin-bottom:1rem;">Цель</div>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;">
+            Создать игру с процедурно генерируемым миром, где игрок выживает в постоянно меняющихся
+            условиях, эволюционирует и взаимодействует с живыми экосистемами, получая бесконечно
+            разнообразный игровой опыт.
+          </p>
+        </div>
+      </div>
+
+      <!-- TASKS -->
+      <div data-reveal>
+        <div class="label">Задачи проекта</div>
+        <h2 class="heading-md" style="margin-bottom:1.5rem;">Этапы реализации</h2>
+        <div class="tasks-list">
+          <div class="task-item">
+            <span class="task-num">01</span>
+            <div>
+              <strong style="color:var(--text-primary);">Концепция и дизайн</strong>
+              <div style="margin-top:0.2rem;">Разработать механику процедурной генерации мира, существ и экосистем. Определить механизмы адаптации и эволюции.</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">02</span>
+            <div>
+              <strong style="color:var(--text-primary);">Базовый прототип</strong>
+              <div style="margin-top:0.2rem;">Реализовать алгоритмы генерации мира с биомами, флорой и фауной. Добавить первичные механики выживания.</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">03</span>
+            <div>
+              <strong style="color:var(--text-primary);">Система эволюции</strong>
+              <div style="margin-top:0.2rem;">Осуществить выбор модификаций (положительных и отрицательных). Обеспечить баланс между сложностью и вознаграждением.</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">04</span>
+            <div>
+              <strong style="color:var(--text-primary);">Экосистема и моделирование</strong>
+              <div style="margin-top:0.2rem;">Разработать динамическую экосистему с взаимодействием флоры и фауны. Настроить пищевые цепочки (хищники, добыча, симбиоз).</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">05</span>
+            <div>
+              <strong style="color:var(--text-primary);">Особые условия</strong>
+              <div style="margin-top:0.2rem;">Реализовать смену климатических условий, сезонов, аномальных зон. Добавить случайных противников и уникальные события.</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">06</span>
+            <div>
+              <strong style="color:var(--text-primary);">Тестирование и балансировка</strong>
+              <div style="margin-top:0.2rem;">Провести серию испытаний для оценки сложности и реиграбельности. Создать систему вознаграждений.</div>
+            </div>
+          </div>
+          <div class="task-item">
+            <span class="task-num">07</span>
+            <div>
+              <strong style="color:var(--text-primary);">Финальная версия</strong>
+              <div style="margin-top:0.2rem;">Создать финальный UI, добавить визуальные эффекты. Подготовить игру к выходу на платформу.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- EXPECTED RESULTS -->
+      <div data-reveal>
+        <div class="label">Ожидаемый результат</div>
+        <h2 class="heading-md" style="margin-bottom:1.5rem;">Что будет создано</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+          <div class="card">
+            <div class="feature-icon" style="width:36px;height:36px;margin-bottom:1rem;">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="30" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 18l5 5 11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="feature-title" style="margin-bottom:0.5rem;">Готовая игра</div>
+            <p style="font-size:0.84rem;color:var(--text-secondary);line-height:1.65;">Процедурно генерируемые уникальные миры, система эволюции, динамическая экосистема.</p>
+          </div>
+          <div class="card">
+            <div class="feature-icon" style="width:36px;height:36px;margin-bottom:1rem;">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 18l3 3 9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="feature-title" style="margin-bottom:0.5rem;">Игровой опыт</div>
+            <p style="font-size:0.84rem;color:var(--text-secondary);line-height:1.65;">Каждое прохождение — новый вызов. Игрок развивает стратегическое мышление и способность к адаптации.</p>
+          </div>
+          <div class="card">
+            <div class="feature-icon" style="width:36px;height:36px;margin-bottom:1rem;">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="26" cy="24" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 14l6 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="feature-title" style="margin-bottom:0.5rem;">Социальный эффект</div>
+            <p style="font-size:0.84rem;color:var(--text-secondary);line-height:1.65;">Истории выживания для обмена. Интерес к экологии и пониманию процессов адаптации в природе.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 Survival Project</span>
+        <nav class="footer-nav">
+          <a href="../index.html">Главная</a>
+          <a href="members.html">Участники</a>
+          <a href="journal.html">Журнал</a>
+          <a href="resources.html">Ресурсы</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
