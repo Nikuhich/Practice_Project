@@ -240,3 +240,51 @@
   lines.forEach(l => l.style.opacity = '0');
   setTimeout(showNext, 600);
 })();
+
+/* ── GALLERY LIGHTBOX ─────────────────────────────────────── */
+(function galleryLightbox() {
+  const wraps = document.querySelectorAll('.gallery-img-wrap');
+  if (!wraps.length) return;
+
+  // Create lightbox
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = `
+    <button class="lightbox-close" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <img src="" alt=""/>
+    <span class="lightbox-caption"></span>
+  `;
+  document.body.appendChild(lb);
+
+  const lbImg = lb.querySelector('img');
+  const lbCap = lb.querySelector('.lightbox-caption');
+  const lbClose = lb.querySelector('.lightbox-close');
+
+  function open(src, caption) {
+    lbImg.src = src;
+    lbCap.textContent = caption || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  wraps.forEach(wrap => {
+    wrap.addEventListener('click', () => {
+      const img = wrap.querySelector('img');
+      const cap = wrap.querySelector('.gallery-caption');
+      if (img) open(img.src, cap ? cap.textContent : '');
+    });
+  });
+
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+})();
